@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Add Student</h1><form method="post"><label>First Name<input name="first_name" required value="{{ request.form.get('first_name','') }}"></label><label>Last Name<input name="last_name" required value="{{ request.form.get('last_name','') }}"></label><button type="submit">Add Student</button></form>{% endblock %}
